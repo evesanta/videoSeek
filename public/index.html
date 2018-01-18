@@ -1,0 +1,123 @@
+<!DOCTYPE thml>
+<html lang="ja">
+
+<head>
+  <title>Webpack test</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="prism.css">
+  <script type="text/javascript" src="js/prism.js"></script>
+
+</head>
+
+<body>
+
+
+  <div id="app">
+
+    <div :class="loaded" style="width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  position: fixed;
+  z-index: 999;font-size: 30px;">
+      Loading Now...
+    </div>
+
+
+
+    <el-container>
+      <el-header>
+        <h1>{{ title }}</h1>
+      </el-header>
+      <ul class="breadcrumb">
+        <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a href="" itemprop="url">
+            <span itemprop="title">ホーム</span>
+          </a>
+        </li>
+        <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a href="" itemprop="url">
+            <span itemprop="title">制作講座</span>
+          </a>
+        </li>
+        <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+          <a href="" itemprop="url">
+            <span itemprop="title">Verilog HDL</span>
+          </a>
+        </li>
+      </ul>
+
+      <el-main>
+
+        <div class="left">
+
+          <section>
+            <video id="video" controls :src="videoUrl" @click="saisei()" autobuffer></video>
+          </section>
+          <section class="item-box">
+            <el-button> &lt; 前の講座へ</el-button>
+            <el-button>次の講座へ > </el-button>
+            <el-button type="primary">Good!</el-button>
+          </section>
+          <div class="description">
+            <pre class="line-numbers code-css" data-no="12">
+<code class="language-css" data-language="css">.line-numbers-rows&gt;span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}</code>
+</pre>
+            <pre class="line-numbers code-html">
+<code class="language-html" data-language="html">&lt;head&gt;
+    &lt;link rel="stylesheet" href="prism.css"&gt;
+    &lt;script type="text/javascript" src="prism.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</code>
+</pre>
+            <pre class="line-numbers code-css" data-no="13">
+<code class="language-css" data-language="css">.line-numbers-rows&gt;span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}</code>
+</pre>
+            <pre class="line-numbers code-js" data-no="14">
+<code class="language-javascript" data-language="js">var provider = new firebase.auth.GoogleAuthProvider();
+firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+    // console.log(user)
+  } else {
+
+  }
+})</code>
+</pre>
+          </div>
+        </div>
+        <div class="right">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="time">時間</th>
+                <th class="name">チャプター</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <tr v-for="(item, index) in tableData2" :class="{ 'nowPlay': item.time <= nowTime && nowTime < item.endTime}" @click="say(index)">
+                <td class="time">{{ item.time | toTime }}</td>
+                <td class="name">{{ item.name }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <section class="recommand">
+            <h3>おすすめ動画 or 質問箱</h3>
+            <!--          <el-button @click="say(1)">Default</el-button>-->
+          </section>
+        </div>
+      </el-main>
+
+    </el-container>
+  </div>
+
+  <script type="text/javascript" src="js/bundle.js"></script>
+
+</body>
+<html>
