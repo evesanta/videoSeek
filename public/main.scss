@@ -26,8 +26,9 @@ header {
     padding-bottom: 0;
     padding-top: 10px;
     overflow-y: hidden;
+    width: 1300px;
     .left {
-      width: 65%;
+      width: 728px;
       section {
         min-width: 100%;
         width: 600px;
@@ -91,10 +92,25 @@ header {
             font-family: arial, sans-serif;
           }
         }
+        .code-c {
+          border: 2px solid #3276b4;
+          .toolbar {
+            background: #3276b4;
+            font-family: arial, sans-serif;
+          }
+        }
+        .code-ruby {
+          border: 2px solid #e8699a;
+          .toolbar {
+            background: #e8699a;
+            font-family: arial, sans-serif;
+          }
+        }
       }
     }
     .right {
-      width: 35%;
+      width: 572px;
+      text-align: center;
       .table {
         margin: 0 auto;
         border-collapse: collapse;
@@ -144,16 +160,16 @@ header {
           }
         }
         .time {
-          width: 50px;
+          width: 72px;
         }
         .name {
-          width: 270px;
+          width: 380px;
         }
       }
       .recommand {
         margin: 10px auto 0 auto;
         padding-top: 0;
-        width: 360px;
+        width: 490px;
         height: 100%;
         background-color: #e8f4fd;
         border: 2px solid #DDD;

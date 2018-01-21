@@ -20,9 +20,10 @@ header {
   display: flex;
   padding-bottom: 0;
   padding-top: 10px;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  width: 1300px; }
   #app .el-main .left {
-    width: 65%; }
+    width: 728px; }
     #app .el-main .left section {
       min-width: 100%;
       width: 600px;
@@ -74,8 +75,19 @@ header {
         #app .el-main .left .description .code-js .toolbar {
           background: #3db271;
           font-family: arial, sans-serif; }
+      #app .el-main .left .description .code-c {
+        border: 2px solid #3276b4; }
+        #app .el-main .left .description .code-c .toolbar {
+          background: #3276b4;
+          font-family: arial, sans-serif; }
+      #app .el-main .left .description .code-ruby {
+        border: 2px solid #e8699a; }
+        #app .el-main .left .description .code-ruby .toolbar {
+          background: #e8699a;
+          font-family: arial, sans-serif; }
   #app .el-main .right {
-    width: 35%; }
+    width: 572px;
+    text-align: center; }
     #app .el-main .right .table {
       margin: 0 auto;
       border-collapse: collapse;
@@ -117,13 +129,13 @@ header {
           color: #3C7;
           opacity: 1; }
       #app .el-main .right .table .time {
-        width: 50px; }
+        width: 72px; }
       #app .el-main .right .table .name {
-        width: 270px; }
+        width: 380px; }
     #app .el-main .right .recommand {
       margin: 10px auto 0 auto;
       padding-top: 0;
-      width: 360px;
+      width: 490px;
       height: 100%;
       background-color: #e8f4fd;
       border: 2px solid #DDD; }
