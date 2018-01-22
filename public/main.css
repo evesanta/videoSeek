@@ -14,134 +14,149 @@ header {
 .el-container {
   height: 100%; }
 
-#app .el-main {
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  padding-bottom: 0;
-  padding-top: 10px;
-  overflow-y: hidden;
-  width: 1300px; }
-  #app .el-main .left {
-    width: 728px; }
-    #app .el-main .left section {
-      min-width: 100%;
-      width: 600px;
-      height: 410px; }
-      #app .el-main .left section video {
-        background-color: black;
-        width: 100%;
-        height: 100%; }
-    #app .el-main .left .item-box {
-      height: 50px;
-      background-color: #ACF;
-      border: 1px solid #AAA;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      z-index: 2;
-      position: relative;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-      box-sizing: border-box; }
-      #app .el-main .left .item-box button {
-        margin-right: 10px;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
-    #app .el-main .left .description {
-      background-color: #e8f4fd;
-      height: 50%;
-      overflow-y: scroll;
-      box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.4) inset;
-      padding-top: 50px;
-      margin-top: -50px;
-      z-index: 1;
-      position: relative; }
-      #app .el-main .left .description pre {
-        margin: 10px 60px;
-        z-index: 1; }
-        #app .el-main .left .description pre:last-child {
-          margin-bottom: 80px; }
-      #app .el-main .left .description .code-html {
-        border: 2px solid #e8a12a; }
-        #app .el-main .left .description .code-html .toolbar {
-          background: #e8a12a;
-          font-family: arial, sans-serif; }
-      #app .el-main .left .description .code-css {
-        border: 2px solid #8CF; }
-        #app .el-main .left .description .code-css .toolbar {
-          background: #8CF;
-          font-family: arial, sans-serif; }
-      #app .el-main .left .description .code-js {
-        border: 2px solid #3db271; }
-        #app .el-main .left .description .code-js .toolbar {
-          background: #3db271;
-          font-family: arial, sans-serif; }
-      #app .el-main .left .description .code-c {
-        border: 2px solid #3276b4; }
-        #app .el-main .left .description .code-c .toolbar {
-          background: #3276b4;
-          font-family: arial, sans-serif; }
-      #app .el-main .left .description .code-ruby {
-        border: 2px solid #e8699a; }
-        #app .el-main .left .description .code-ruby .toolbar {
-          background: #e8699a;
-          font-family: arial, sans-serif; }
-  #app .el-main .right {
-    width: 572px;
-    text-align: center; }
-    #app .el-main .right .table {
-      margin: 0 auto;
-      border-collapse: collapse;
-      background-color: white;
-      text-align: left;
-      line-height: 1.5;
-      border: 2px solid #DDD;
-      z-index: 3; }
-      #app .el-main .right .table thead {
-        display: block; }
-        #app .el-main .right .table thead th {
-          padding: 10px;
-          font-weight: bold;
-          vertical-align: top;
-          background-color: #EFE;
-          border-bottom: 3px solid #3C7; }
-      #app .el-main .right .table tbody {
-        cursor: pointer;
-        display: block;
+#app {
+  z-index: 20; }
+  #app .el-main {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    padding-bottom: 0;
+    padding-top: 10px;
+    width: 1300px; }
+    #app .el-main .left {
+      width: 728px; }
+      #app .el-main .left section {
+        min-width: 100%;
+        width: 600px;
+        height: 410px; }
+        #app .el-main .left section video {
+          background-color: black;
+          width: 100%;
+          height: 100%; }
+      #app .el-main .left .item-box {
+        height: 50px;
+        background-color: #ACF;
+        border: 1px solid #AAA;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 2;
+        position: relative;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box; }
+        #app .el-main .left .item-box button {
+          margin-right: 10px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
+      #app .el-main .left .description {
+        background-color: #e8f4fd;
+        height: 405px;
         overflow-y: scroll;
-        overflow-x: hidden;
-        height: 350px; }
-        #app .el-main .right .table tbody::-webkit-scrollbar {
-          display: none; }
-        #app .el-main .right .table tbody td {
-          padding: 10px;
-          vertical-align: top;
-          border-bottom: 1px solid #ccc;
-          white-space: nowrap;
-          overflow-x: hidden; }
-        #app .el-main .right .table tbody tr {
-          opacity: 0.4;
-          font-size: 14px;
-          transition: background-color 0.5s 0s ease; }
-          #app .el-main .right .table tbody tr:hover {
+        box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.4) inset;
+        padding-top: 50px;
+        margin-top: -50px;
+        z-index: 1;
+        position: relative; }
+        #app .el-main .left .description pre {
+          margin: 10px 60px;
+          z-index: 1; }
+          #app .el-main .left .description pre:last-child {
+            margin-bottom: 80px; }
+        #app .el-main .left .description .code-html {
+          border: 2px solid #e8a12a; }
+          #app .el-main .left .description .code-html .toolbar {
+            background: #e8a12a;
+            font-family: arial, sans-serif; }
+        #app .el-main .left .description .code-css {
+          border: 2px solid #8CF; }
+          #app .el-main .left .description .code-css .toolbar {
+            background: #8CF;
+            font-family: arial, sans-serif; }
+        #app .el-main .left .description .code-js {
+          border: 2px solid #3db271; }
+          #app .el-main .left .description .code-js .toolbar {
+            background: #3db271;
+            font-family: arial, sans-serif; }
+        #app .el-main .left .description .code-c {
+          border: 2px solid #3276b4; }
+          #app .el-main .left .description .code-c .toolbar {
+            background: #3276b4;
+            font-family: arial, sans-serif; }
+        #app .el-main .left .description .code-ruby {
+          border: 2px solid #e8699a; }
+          #app .el-main .left .description .code-ruby .toolbar {
+            background: #e8699a;
+            font-family: arial, sans-serif; }
+        #app .el-main .left .description .sankou {
+          margin: 20px 60px;
+          border: 2px solid #ffcc22;
+          background-color: white;
+          position: relative;
+          padding-left: 30px; }
+          #app .el-main .left .description .sankou .title {
+            border-radius: 20px;
+            padding: 3px 6px;
+            position: absolute;
+            left: 5px;
+            top: -15px;
+            background-color: #ffcc22;
+            color: white; }
+    #app .el-main .right {
+      width: 572px;
+      text-align: center; }
+      #app .el-main .right .table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: white;
+        text-align: left;
+        line-height: 1.5;
+        border: 2px solid #DDD;
+        z-index: 3; }
+        #app .el-main .right .table thead {
+          display: block; }
+          #app .el-main .right .table thead th {
+            padding: 10px;
+            font-weight: bold;
+            vertical-align: top;
             background-color: #EFE;
-            opacity: 0.7; }
-        #app .el-main .right .table tbody .nowPlay {
-          color: #3C7;
-          opacity: 1; }
-      #app .el-main .right .table .time {
-        width: 72px; }
-      #app .el-main .right .table .name {
-        width: 380px; }
-    #app .el-main .right .recommand {
-      margin: 10px auto 0 auto;
-      padding-top: 0;
-      width: 490px;
-      height: 100%;
-      background-color: #e8f4fd;
-      border: 2px solid #DDD; }
-      #app .el-main .right .recommand h3 {
-        margin-top: 0;
-        text-align: center; }
+            border-bottom: 3px solid #3C7; }
+        #app .el-main .right .table tbody {
+          cursor: pointer;
+          display: block;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          height: 350px; }
+          #app .el-main .right .table tbody::-webkit-scrollbar {
+            display: none; }
+          #app .el-main .right .table tbody td {
+            padding: 10px;
+            vertical-align: top;
+            border-bottom: 1px solid #ccc;
+            white-space: nowrap;
+            overflow-x: hidden; }
+          #app .el-main .right .table tbody tr {
+            opacity: 0.4;
+            font-size: 14px;
+            transition: background-color 0.5s 0s ease; }
+            #app .el-main .right .table tbody tr:hover {
+              background-color: #EFE;
+              opacity: 0.7; }
+          #app .el-main .right .table tbody .nowPlay {
+            color: #3C7;
+            opacity: 1; }
+        #app .el-main .right .table .time {
+          width: 72px; }
+        #app .el-main .right .table .name {
+          width: 380px; }
+      #app .el-main .right .recommand {
+        margin: 10px auto 0 auto;
+        padding-top: 0;
+        width: 490px;
+        height: 445px;
+        background-color: #e8f4fd;
+        border: 2px solid #DDD; }
+        #app .el-main .right .recommand h3 {
+          margin-top: 0;
+          text-align: center; }
 
 .breadcrumb {
   margin-top: 0;

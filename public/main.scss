@@ -19,13 +19,13 @@ header {
 }
 
 #app {
+  z-index: 20;
   .el-main {
     margin: 0 auto;
     height: 100%;
     display: flex;
     padding-bottom: 0;
     padding-top: 10px;
-    overflow-y: hidden;
     width: 1300px;
     .left {
       width: 728px;
@@ -57,7 +57,7 @@ header {
       }
       .description {
         background-color: #e8f4fd;
-        height: 50%;
+        height: 405px;
         overflow-y: scroll;
         box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.4) inset;
         padding-top: 50px;
@@ -104,6 +104,22 @@ header {
           .toolbar {
             background: #e8699a;
             font-family: arial, sans-serif;
+          }
+        }
+        .sankou {
+          margin: 20px 60px;
+          border: 2px solid #ffcc22;
+          background-color: white;
+          position: relative;
+          padding-left: 30px;
+          .title {
+            border-radius: 20px;
+            padding: 3px 6px;
+            position: absolute;
+            left: 5px;
+            top: -15px;
+            background-color: #ffcc22;
+            color: white;
           }
         }
       }
@@ -170,7 +186,7 @@ header {
         margin: 10px auto 0 auto;
         padding-top: 0;
         width: 490px;
-        height: 100%;
+        height: 445px;
         background-color: #e8f4fd;
         border: 2px solid #DDD;
         h3 {
